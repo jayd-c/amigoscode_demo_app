@@ -1,6 +1,7 @@
 package com.example.demo.student;
 
 import jakarta.persistence.*;
+import jakarta.transaction.Transactional;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -61,7 +62,7 @@ public class Student {
     public String getEmail() {
         return email;
     }
-
+    @Transactional
     public void setEmail(String email) {
         this.email = email;
     }

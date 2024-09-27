@@ -22,7 +22,7 @@ public class StudentConfig {
         return args -> {
 
             repository.saveAll(students);
-            System.out.println(Period.between(LocalDate.ofEpochDay(LocalDate.now().getYear()),LocalDate.of(1979,03,25)));
+//            System.out.println(Period.between(LocalDate.now(),LocalDate.of(1979,03,25)));
         };
     }
 }
